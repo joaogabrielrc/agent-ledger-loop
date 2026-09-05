@@ -3,7 +3,9 @@
 A reference implementation for running a coding agent unattended for days, where the
 state lives on disk instead of in the model's context.
 
-Roughly 350 lines of bash. The code is not the point; the six rules are. They came out of
+![The loop: phases go from PENDING to DONE, one fresh agent process each, until the count reaches zero](.media/agent-ledger-loop.gif)
+
+254 lines of bash. The code is not the point; the six rules are. They came out of
 one 20-hour run against a real codebase, and each one is here because something measurably
 broke without it.
 
